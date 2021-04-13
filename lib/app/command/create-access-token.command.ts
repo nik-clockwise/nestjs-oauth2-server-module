@@ -10,6 +10,6 @@ export class CreateAccessTokenCommand {
         public readonly exp: number,
         public readonly iat: number,
         public readonly request: OAuth2Request,
-        public readonly userId?: string,
+        public readonly userId?: number,
     ) {}
 }
