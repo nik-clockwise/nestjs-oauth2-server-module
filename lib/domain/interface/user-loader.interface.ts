@@ -9,5 +9,5 @@ export interface UserLoaderInterface {
      *
      * @param userId
      */
-    load(userId: string): Promise<UserInterface>;
+    load(userId: number): Promise<UserInterface>;
 }
