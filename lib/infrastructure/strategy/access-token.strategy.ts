@@ -32,8 +32,7 @@ export class AccessTokenStrategy extends PassportStrategy(Strategy, 'access-toke
             return new UserPayload(
                 accessToken,
                 accessToken.userId,
-                user.username,
-                user.email);
+                user);
         }
 
         return new ClientPayload(
