@@ -12,7 +12,7 @@ export class UserPayload implements Oauth2PayloadInterface {
 
     constructor(
         public readonly accessToken: AccessTokenEntity,
-        public readonly id: string,
+        public readonly id: number,
         public readonly username: string,
         public readonly email: string,
     ) {}
