@@ -18,5 +18,5 @@ export interface Oauth2PayloadInterface {
     readonly accessToken: AccessTokenEntity;
 
     // The ID is common to all
-    readonly id:  number;
+    readonly id:  number|string;
 }
