@@ -20,7 +20,7 @@ export class InvalidUserException extends UnauthorizedException {
      *
      * @param userId
      */
-    static withId(userId: string): InvalidUserException {
+    static withId(userId: number): InvalidUserException {
         return new InvalidUserException(`The user with id "${userId}" was not found`);
     }
 }
