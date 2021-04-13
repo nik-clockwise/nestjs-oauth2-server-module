@@ -42,7 +42,7 @@ export class AccessTokenEntity {
     @Column({nullable: true, length: 500})
     scope: string;
 
-    @Column('timestamp', {name: 'created_on', nullable: false, default: () => 'now()'})
+    @Column('timestamp', {name: 'created_at', nullable: false, default: () => 'now()'})
     createdAt: Date;
 
     //@Column({name: 'created_from', type: 'jsonb', nullable: true})
