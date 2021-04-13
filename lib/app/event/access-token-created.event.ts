@@ -10,6 +10,6 @@ export class AccessTokenCreatedEvent {
         public readonly refreshToken: string,
         public readonly refreshTokenExpiresAt: Date,
         public readonly scope: string,
-        public readonly userId?: string,
+        public readonly userId?: number,
     ) {}
 }
