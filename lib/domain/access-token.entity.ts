@@ -33,8 +33,8 @@ export class AccessTokenEntity {
     @JoinColumn({name: 'client_id', referencedColumnName: 'id'})
     client: ClientEntity;
 
-    @Column({nullable: true})
-    userId: string;
+    @Column({name: 'user_id', nullable: true})
+    userId: number;
 
     /**
      * JSON List of api IDs granted with this token for the client
