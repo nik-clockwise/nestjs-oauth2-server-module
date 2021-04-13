@@ -1,5 +1,6 @@
 import {AccessTokenEntity} from "../access-token.entity";
 import {Oauth2PayloadInterface, Oauth2PayloadType} from "./oauth2-payload.interface";
+import { UserInterface } from './user.interface';
 
 /**
  * Represents a UserPayload
@@ -13,7 +14,8 @@ export class UserPayload implements Oauth2PayloadInterface {
     constructor(
         public readonly accessToken: AccessTokenEntity,
         public readonly id: number,
-        public readonly username: string,
-        public readonly email: string,
-    ) {}
+        user: UserInterface
+    ) {
+        for (let k in user) { this[k] = user[k] }
+    }
 }
